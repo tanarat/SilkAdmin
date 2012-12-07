@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>SILK <sitemesh:write property='title'>Title goes here</sitemesh:write></title>
+
+<link href="/silkadmin/css/acc.css" rel="stylesheet" type="text/css" />
+<link href="/silkadmin/css/style.css" rel="stylesheet" type="text/css" />
+
+<sitemesh:write property='head' />
+</head>
+<body>
+
+	<!--     <h1 class='title'>SiteMesh example site: <sitemesh:write property='title'>Title goes here</sitemesh:write></h1> -->
+	<div id="header">
+		<!-- <img alt="logo" src="images/logo.png"> -->
+		<h1>Header</h1>
+	</div>
+	<div id="leftmenu">
+		<div class="glossymenu">
+
+			<p class="menuLabel">MENU</p>
+			<!-- <a class="menuitem submenuheader" href="http://www.dynamicdrive.com/style/" >Menu</a> -->
+			<div class="submenu">
+				<ul>
+					<li><a class="menuitem" href="/silkadmin/home">Home</a></li>
+					<li><a class="menuitem" href="/silkadmin/entrepreneur">Entrepreneur</a></li>
+					<li><a class="menuitem" href="list">Halal Barcode</a></li>
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<div id="maincontent">
+		<sitemesh:write property='body'>Body goes here. Blah blah blah.</sitemesh:write>
+	</div>
+
+	<div id="footer"></div>
+
+
+</body>
+
+</html>

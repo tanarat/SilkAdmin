@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.bytecode.use_reflection_optimizer">false</property>
+    <property name="hibernate.connection.password">silk</property>
+    <property name="hibernate.connection.url">jdbc:postgresql://localhost:5433/silkdb</property>
+    <property name="hibernate.connection.username">silk</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+    <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+    <property name="show_sql">true</property>
+    <property name="format_sql">true</property>
+    <property name="use_sql_comments">false</property>
+    <property name="hbm2ddl.auto">update</property>
+<!--     <mapping resource="config/hibernate/HalalBarcode.hbm.xml" /> -->
+<!--     <mapping resource="config/hibernate/Entrepreneur.hbm.xml" /> -->
+<!--     <mapping resource="config/hibernate/QuestionGroup.hbm.xml" /> -->
+
+	<mapping class="org.silk.common.model.HalalProduct"/>
+    <mapping class="org.silk.common.model.Entrepreneur"/>
+	<mapping class="org.silk.checklist.model.Question"/>
+	<mapping class="org.silk.checklist.model.QuestionGroup"/>
+	<mapping class="org.silk.checklist.model.NoReason"/>
+	<mapping class="org.silk.checklist.model.Checklist"/>
+	<mapping class="org.silk.checklist.model.EvalForm"/>
+	<mapping class="org.silk.checklist.model.Answer"/>
+    <mapping class="test.Student"/>
+  </session-factory>
+</hibernate-configuration>

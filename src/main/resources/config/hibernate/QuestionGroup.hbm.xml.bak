@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="org.silk.checklist.model.QuestionGroup" 
+		table="QuestionGroup" schema="silk">
+        <id name="id" column="id" type="java.lang.Long">
+            <generator class="increment"/>
+        </id>
+        <property name="groupName" type="string">
+            <column name="GROUP_NAME" length="255" not-null="true" />
+        </property>
+        
+        
+    </class>
+</hibernate-mapping>

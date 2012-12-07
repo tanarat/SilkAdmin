@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+ 	<bean id="halalBarcodeAction" class="org.silk.halal.action.HalalBarcodeAction">
+		<property name="halalBarcodeBo" ref="halalBarcodeBo" />	
+	</bean>
+
+	<bean id="halalBarcodeBo" class="org.silk.halal.bo.impl.HalalBarcodeBoImpl" >
+<!-- 		<property name="halalBarcodeDao" ref="halalBarcodeDao" /> -->
+	</bean>
+	
+   	<bean id="halalBarcodeDao" class="org.silk.halal.dao.impl.HalalBarcodeDaoImpl" >
+<!-- 		<property name="sessionFactory" ref="sessionFactory" /> -->
+	</bean>
+ 
+</beans>

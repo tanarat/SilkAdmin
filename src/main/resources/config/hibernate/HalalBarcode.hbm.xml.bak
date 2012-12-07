@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 20 Julai 2010 11:40:18 AM by Hibernate Tools 3.2.5.Beta -->
+<hibernate-mapping>
+    <class name="org.silk.halal.model.HalalBarcode" 
+		table="HalalBarcode" schema="silk">
+        <id name="id" column="id" type="java.lang.Long">
+            
+            <generator class="increment"/>
+        </id>
+        <property name="halalNo" type="string">
+            <column name="HALAL_NO" length="20" not-null="true" />
+        </property>
+        <property name="productName" type="string">
+            <column name="PRODUCT_NAME" length="255" not-null="true" />
+        </property>
+        <property name="upc" type="string">
+            <column name="BARCODE" length="20"/>
+        </property>
+        <property name="halalFromMonth" type="int">
+            <column name="HALAL_FROM_MONTH" not-null="false"/>
+        </property>
+        <property name="halalFromYear" type="int">
+            <column name="HALAL_FROM_YEAR" not-null="false"/>
+        </property>
+        <property name="halalToMonth" type="int">
+            <column name="HALAL_TO_MONTH" not-null="false"/>
+        </property>
+        <property name="halalToYear" type="int">
+            <column name="HALAL_TO_YEAR" not-null="false"/>
+        </property>
+        <many-to-one name="owner" class="org.silk.common.model.Entrepreneur" column="OWNER" cascade="all" not-null="true" />
+    </class>
+</hibernate-mapping>

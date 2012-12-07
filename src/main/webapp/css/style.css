@@ -1,0 +1,66 @@
+/* body {  */
+/* 	font-family: arial, sans-serif;  */
+/* 	background-color: #ffffcc;  */
+/* } */
+/* h1, h2, h3, h4 {  */
+/* 	text-align: center;  */
+/* 	background-color: #ccffcc; */
+/*     border-top: 1px solid #66ff66;  */
+/* } */
+.mainBody { /* 	padding: 10px;  */
+	border: 1px solid #555555;
+}
+
+.menuLabel {
+	font-size: small;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: #555555;
+}
+
+.disclaimer {
+	text-align: center;
+	border-top: 1px solid #cccccc;
+	margin-top: 40px;
+	color: #666666;
+	font-size: smaller;
+}
+
+#header {
+	position: absolute;
+	border: 1px solid #000000;
+	top: 0px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 70px;
+	overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+	/* 	background: pink; */
+	color: #555;
+	top: 0px;
+}
+
+#leftmenu {
+	position: absolute;
+	padding-top: 5px;
+	top: 71px;
+	border: 1px solid #000000;
+	border-top: 0px;
+	bottom: 0;
+	left: 0;
+	width: 200px; /*Width of frame div*/
+	height: 100%;
+	overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+	/* background:blue; */
+	color: black;
+}
+
+#maincontent {
+	position: absolute;
+	padding-top: 5px;
+	padding-left: 5px;
+	top: 71px;
+	left: 200px; /*Set left value to WidthOfFrameDiv*/
+	right: 0;
+	bottom: 0;
+	overflow: auto;
+}
